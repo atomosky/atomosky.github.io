@@ -24,7 +24,7 @@ orcid: 0009-0000-1712-9386
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    AnneMarie Tomosky, MPH is a public health researcher and senior project manager working at the intersection of health, data, and emerging technologies. She supports interdisciplinary research that applies data-driven and AI-enabled approaches to complex public health and societal challenges.
+    AnneMarie Tomosky, MPH is a public health researcher and senior project manager within the Intelligent Health Research Lab at Temple University Barnett College of Public Health, Department of Health Services Administration and Policy. She supports interdisciplinary research that applies data-driven and AI-enabled approaches to complex public health and societal challenges.
   </p>
   <p>
     She brings experience across clinical, academic, and global public health settings. Her interests focus on translating innovative health technologies into practical, real-world impact—especially in ways that promote equity, collaboration, and human-centered design.
@@ -47,11 +47,35 @@ education:
   position: BS in Kinesiology, Health Professions Concentration
   date: May, 2017
 
-# experience:
-# - name: Peking University
+experience:
+ - name: Peking University
 #   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+   position: Research Intern
+  date: Sep. 2019 - Jul. 2021
+
+  experience:
+ - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+   position: Research Intern
+  date: Sep. 2019 - Jul. 2021
+
+  experience:
+ - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+   position: Research Intern
+  date: Sep. 2019 - Jul. 2021
+
+  experience:
+ - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+   position: Research Intern
+  date: Sep. 2019 - Jul. 2021
+
+  experience:
+ - name: Peking University
+#   logo: /assets/images/badges/PKU_red.png
+   position: Research Intern
+  date: Sep. 2019 - Jul. 2021
 
 awards:
 - name: Award Name 2
