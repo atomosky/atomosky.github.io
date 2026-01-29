@@ -5,7 +5,7 @@ navbar_name: "AnneMarie Tomosky"
 positions:
 - name: Senior Research Project Manager
 - name: Barnett College of Public Health Temple University
-  logo: /assets/images/badges/MIT_Social_circle.png  # Logo is optional
+  logo: assets/images/badges/Screenshot 2026-01-29 174125.png  # Logo is optional
 
 
 email: "atomosky@temple.edu"
@@ -33,17 +33,17 @@ short_bio: >-
   Outside of work, AnneMarie enjoys live music, travel, and teaching dance-fitness classes, and is curious about how language and storytelling shape the way we understand health and one another.
   </p>
   
-# portrait_url: assets/images/badges/Screenshot 2026-01-29 174125.png
+portrait_url: assets/images/badges/Screenshot 2026-01-29 174125.png
 # portrait_caption: >-
 # Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: Temple University
-  logo: /assets/images/badges/MIT_Social_circle.png
+  logo: assets/images/badges/Screenshot 2026-01-29 174125.png
   degree: MPH in Health Policy and Management
   Graduation: 2024
 - name: Temple University
-  logo: /assets/images/badges/PKU_red.png
+  logo: assets/images/badges/Screenshot 2026-01-29 174125.png
   Degree: BS in Kinesiology, Health Professions Concentration
   Graduation: 2017
 
