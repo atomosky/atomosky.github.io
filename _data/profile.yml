@@ -33,9 +33,9 @@ short_bio: >-
   Outside of work, AnneMarie enjoys live music, travel, and teaching dance-fitness classes, and is curious about how language and storytelling shape the way we understand health and one another.
   </p>
   
-portrait_url: /assets/images/photos/portrait.jpg
-portrait_caption: >-
-  Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
+# portrait_url: assets/images/badges/Screenshot 2026-01-29 174125.png
+# portrait_caption: >-
+# Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
 - name: Temple University
