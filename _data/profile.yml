@@ -41,11 +41,11 @@ education:
 - name: Temple University
   logo: assets/images/badges/Screenshot 2026-01-29 174819.png
   degree: MPH in Health Policy and Management
-  Graduation: 2024
+  date: Aug, 2024
 - name: Temple University
   logo: assets/images/badges/Screenshot 2026-01-29 174819.png
   Degree: BS in Kinesiology, Health Professions Concentration
-  Graduation: 2017
+  date: May, 2017
 
 # experience:
 # - name: Peking University
