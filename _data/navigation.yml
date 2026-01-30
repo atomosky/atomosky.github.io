@@ -4,7 +4,7 @@ pages:
 - name: Home
   url: /
 - name: Practice
-  url: /practive/
+  url: /practice/
 - name: Teaching 
   url: /teaching/
 - name: Research
