@@ -97,3 +97,11 @@ div.lazy {
   font-weight: 500;
   color: #444;
 }
+/* Hide News and Publications sections on homepage */
+.homepage .news,
+.homepage .publications,
+.homepage #news,
+.homepage #publications {
+  display: none;
+}
+
