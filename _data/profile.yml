@@ -52,39 +52,46 @@ education:
   date: May 2017
 
 experience:
- - name: Peking University
+ - name: Temple University
 #   logo: /assets/images/badges/PKU_red.png
-   position: Research Intern
-  date: Sep. 2019 - Jul. 2021
+   position: Research Project Manager
+  date: Nov. 2023 - Present
+
+   experience:
+ - name: Health Federation of Philadelphia
+#   logo: /assets/images/badges/PKU_red.png
+   position: Quality Measure Intern
+  date: Sep. 2023 - May. 2024
 
   experience:
- - name: Peking University
+ - name: Temple University
 #   logo: /assets/images/badges/PKU_red.png
-   position: Research Intern
-  date: Sep. 2019 - Jul. 2021
+   position: Project Coordinator
+  date: Sep. 2022 - Nov. 2023
 
   experience:
- - name: Peking University
+ - name: ScribeAmerica, Various Outpatient and Emergency Settings
 #   logo: /assets/images/badges/PKU_red.png
-   position: Research Intern
-  date: Sep. 2019 - Jul. 2021
+   position: Medical and Chief Scribe Roles
+  date: Sep. 2018 - Nov. 2023
 
   experience:
- - name: Peking University
+ - name: Temple University Emergency Medical Services (TU EMS) and Springfield Ambulance Corps 
 #   logo: /assets/images/badges/PKU_red.png
-   position: Research Intern
-  date: Sep. 2019 - Jul. 2021
+   position: Emergency Medical Technician (EMT-B)
+  date: Feb. 2015 - May. 2017 (TU EMS) and May 2017 - Sep 2018 (Springfield Amb. Corps)
 
   experience:
- - name: Peking University
+ - name:  Waves of Health Organization, The Dominican Republic 
 #   logo: /assets/images/badges/PKU_red.png
-   position: Research Intern
-  date: Sep. 2019 - Jul. 2021
+   position: Research Assistant
+  date: April 2019
+
 
 awards:
-- name: Award Name 2
-  date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Chair Tuition Scholarship, Temple University
+  date: 2022-2023
+- name: CHOP Bravogram (for COVID-19 Vaccine Clinic Service)
+  date: April 18, 2021
+# name: A quick brown fox jumps over the lazy dog and runs away award
+ # date: 2021
