@@ -89,3 +89,14 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+.teaching h1 {
+  margin-bottom: 2.5rem;
+}
+
+.teaching h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #444;
+}
