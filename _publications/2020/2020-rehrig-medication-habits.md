@@ -1,12 +1,8 @@
 ---
-title: "Evaluating medication habits in medical mission patients: A cross-sectional study"
+title: "Evaluating Medication Habits in Medical Mission Patients: A Cross-Sectional Study"
 date: 2020-09-01
-type: publication
-selected: true
-
 pub: "Cureus"
 pub_date: "2020"
-
 authors:
   - Rehrig J
   - Vitale L
@@ -14,10 +10,7 @@ authors:
   - Jaffry S
   - Tomosky A
   - Boni C
-
 links:
-  DOI: https://doi.org/10.7759/cureus.10533
+  Paper: https://doi.org/10.7759/cureus.10533
 ---
-
-<!-- Optional: a 1–2 sentence short description (TL;DR) -->
-A cross-sectional analysis of medication habits among medical mission patients to inform care continuity and patient safety strategies.
+This study evaluated medication habits among patients receiving care through medical mission settings, identifying patterns of medication access, adherence, and opportunities for improved continuity of care. Findings highlight the importance of medication reconciliation and patient education in short-term clinical interventions.
