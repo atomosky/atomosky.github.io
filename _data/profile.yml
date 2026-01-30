@@ -38,15 +38,15 @@ portrait_url: assets/images/photos/original-7E594FDA-8862-473D-8930-48E592D56BC0
 # Photo by Manja Vitolic on Unsplash (this caption is optional, comment it out to disable).
 
 education:
-- name: Temple University, College of Public Health
+- name: Temple University College of Public Health
   logo: assets/images/badges/Screenshot 2026-01-29 174819.png
   position: MPH in Health Policy and Management
   date: Aug 2024
-- name: Temple University, College of Science and Technology
+- name: Temple University College of Science and Technology
   logo: assets/images/badges/Screenshot 2026-01-29 174819.png
   position: Certificate in Genomic Medicine
   date: May 2020
-- name: Temple University, College of Public Health
+- name: Temple University College of Public Health
   logo: assets/images/badges/Screenshot 2026-01-29 174819.png
   position: BS in Kinesiology, Pre-Health Professions
   date: May 2017
