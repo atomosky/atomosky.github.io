@@ -1,32 +1,170 @@
 ---
 layout: default
-title : Publications
-navbar_title: Publications
+title: Research
+navbar_title: Research
 body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+  data-spy="scroll" data-target="#navbar-research" data-offset="100"
 ---
 
-{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+{%- comment -%}
+This page is organized as:
+1) Current Research Activities (hand-curated, editable here)
+2) Dissemination (from site.publications collection, grouped by `type`)
+
+To enable grouping, add a `type:` field to each item in _publications:
+- type: publication
+- type: presentation
+- type: poster
+- type: report   (optional)
+If type is missing, items will fall into "Other".
+{%- endcomment -%}
+
+{% assign all_outputs = site.publications | sort: "date" | reverse %}
+
+{% assign outputs_publications = all_outputs | where: "type", "publication" %}
+{% assign outputs_presentations = all_outputs | where: "type", "presentation" %}
+{% assign outputs_posters = all_outputs | where: "type", "poster" %}
+{% assign outputs_reports = all_outputs | where: "type", "report" %}
+
+{%- comment -%}
+Catch-all for anything missing `type` or using a different label.
+{%- endcomment -%}
+{% assign outputs_other = "" | split: "" %}
+{% for item in all_outputs %}
+  {% unless item.type == "publication" or item.type == "presentation" or item.type == "poster" or item.type == "report" %}
+    {% assign outputs_other = outputs_other | push: item %}
+  {% endunless %}
+{% endfor %}
 
 <div class="row">
-    <div class="col-12 col-lg-10">
-        {% for year in pubs_by_year %}
-        {% assign num_papers = year.items | size %}
-        <h2 class="pt-4" id="year-{{ year.name }}">{{ year.name }}</h2>
-        <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
-            {% for item in year.items %}
-                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
-            {% endfor %}
-        </div>
-        {% endfor %}
+  <div class="col-12 col-lg-10">
+
+    <h1 class="mb-3">Research</h1>
+
+    <p class="lead">
+      I support interdisciplinary research and applied public health initiatives focused on health equity,
+      public health systems strengthening, and responsible, human-centered uses of data and AI.
+    </p>
+
+    <!-- ========================= -->
+    <!-- Current Research Activities -->
+    <!-- ========================= -->
+    <h2 class="pt-4" id="current-research">Current Research Activities</h2>
+    <div class="my-0 p-3 bg-white shadow-sm rounded-xl">
+
+      <div class="mb-4">
+        <h3 class="h5 mb-1">DREAM-KG (NSF)</h3>
+        <p class="mb-1">
+          Develop Dynamic, Responsive, Adaptive, and Multifaceted Knowledge Graphs to Address Homelessness with Explainable AI.
+          I coordinate team workflows, meeting cadence, follow-ups, user feedback activities, and reporting deliverables.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="h5 mb-1">Enhancing Cybersecurity Training for Next Generation Healthcare Professionals (NSF)</h3>
+        <p class="mb-1">
+          Support program coordination, IRB compliance, training logistics, and annual reporting deliverables.
+        </p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="h5 mb-1">AI2Equity (NIH)</h3>
+        <p class="mb-1">
+          AI integrating social determinants of health to advance health equity in cardiovascular risk prediction.
+          Support protocol development and IRB submissions.
+        </p>
+      </div>
+
+      <div class="mb-0">
+        <h3 class="h5 mb-1">Public Health System Recovery &amp; Resilience (PACT/USAID)</h3>
+        <p class="mb-1">
+          Contribute to training events, partner coordination, timelines, reporting, and logistics supporting public health recovery work.
+        </p>
+      </div>
+
     </div>
 
-    <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
-            {% for year in pubs_by_year %}
-            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
-            {% endfor %}
-        </div>
+    <!-- ============== -->
+    <!-- Dissemination -->
+    <!-- ============== -->
+    <h2 class="pt-5" id="dissemination">Dissemination</h2>
+    <p class="text-muted mb-3">
+      Peer-reviewed publications, posters, presentations, and other scholarly outputs.
+    </p>
+
+    <!-- Publications -->
+    <h3 class="pt-3" id="publications">Peer-reviewed Publications</h3>
+    {% if outputs_publications == empty %}
+      <div class="alert alert-light border">No publications listed yet.</div>
+    {% else %}
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in outputs_publications %}
+          {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Presentations -->
+    <h3 class="pt-4" id="presentations">Presentations</h3>
+    {% if outputs_presentations == empty %}
+      <div class="alert alert-light border">No presentations listed yet.</div>
+    {% else %}
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in outputs_presentations %}
+          {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Posters -->
+    <h3 class="pt-4" id="posters">Posters</h3>
+    {% if outputs_posters == empty %}
+      <div class="alert alert-light border">No posters listed yet.</div>
+    {% else %}
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in outputs_posters %}
+          {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Reports / Briefs -->
+    <h3 class="pt-4" id="reports">Reports &amp; Briefs</h3>
+    {% if outputs_reports == empty %}
+      <div class="alert alert-light border">No reports listed yet.</div>
+    {% else %}
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in outputs_reports %}
+          {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Other -->
+    {% if outputs_other != empty %}
+      <h3 class="pt-4" id="other">Other</h3>
+      <div class="my-0 p-0 bg-white shadow-sm rounded-xl">
+        {% for item in outputs_other %}
+          {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last first=forloop.first last=forloop.last %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+  </div>
+
+  <!-- Sidebar navigation -->
+  <div class="col-2 d-none d-lg-block">
+    <div id="navbar-research" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+      <a class="nav-link d-block" href="#current-research">Current Research</a>
+      <a class="nav-link d-block" href="#dissemination">Dissemination</a>
+      <a class="nav-link d-block ms-2" href="#publications">Publications</a>
+      <a class="nav-link d-block ms-2" href="#presentations">Presentations</a>
+      <a class="nav-link d-block ms-2" href="#posters">Posters</a>
+      <a class="nav-link d-block ms-2" href="#reports">Reports</a>
+      {% if outputs_other != empty %}
+        <a class="nav-link d-block ms-2" href="#other">Other</a>
+      {% endif %}
     </div>
+  </div>
 
 </div>
