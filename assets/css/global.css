@@ -90,3 +90,12 @@ div.lazy {
     font-family: Source Code Pro, monospace;
 }
 
+/* Improve vertical spacing on Teaching page */
+.teaching h1 {
+  margin-bottom: 2.5rem;
+}
+
+.teaching h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
