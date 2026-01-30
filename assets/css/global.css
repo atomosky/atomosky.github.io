@@ -97,11 +97,12 @@ div.lazy {
   font-weight: 500;
   color: #444;
 }
-/* Hide News and Publications sections on homepage */
-.homepage .news,
-.homepage .publications,
-.homepage #news,
-.homepage #publications {
+/* Hide News and Selected Publications cards on homepage */
+.homepage .card-news,
+.homepage .card-publications,
+.homepage section.news,
+.homepage section.publications {
   display: none;
 }
+
 
