@@ -131,15 +131,20 @@ div.lazy {
   position: relative;
 }
 
-/* Subtle left accent bar */
+/* Research card accent bar (inside the card to avoid clipping) */
+.research-card {
+  position: relative;
+  padding-left: 26px; /* space for the accent bar */
+}
+
 .research-card::before {
   content: "";
   position: absolute;
-  left: 0;
+  left: 12px;        /* inside the card */
   top: 14px;
   bottom: 14px;
   width: 4px;
-  background: rgba(0, 0, 0, 0.12);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
