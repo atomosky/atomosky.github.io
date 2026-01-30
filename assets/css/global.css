@@ -103,8 +103,9 @@ div.lazy {
 .homepage section.news,
 .homepage section.publications {
   display: none;
+}
 
-    /* =========================
+/* =========================
    Research page: Cards + Tags
    ========================= */
 
@@ -182,7 +183,3 @@ div.lazy {
   color: rgba(0, 0, 0, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
-
-}
-
-
