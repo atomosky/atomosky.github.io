@@ -1,6 +1,6 @@
 ---
-title: ***
-group: ***
+title: 
+group: 
 date: 2024-10-01
 width: 6
 show: false
