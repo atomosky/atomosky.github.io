@@ -89,14 +89,3 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
-
-/* Improve vertical spacing on Teaching page */
-.teaching h1 {
-  margin-top: 0;
-  margin-bottom: 5rem;
-}
-
-.teaching h2 {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
-}
