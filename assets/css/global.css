@@ -103,6 +103,86 @@ div.lazy {
 .homepage section.news,
 .homepage section.publications {
   display: none;
+
+    /* =========================
+   Research page: Cards + Tags
+   ========================= */
+
+/* Optional: keep content from running too wide */
+.page-content, main, .container {
+  max-width: 980px;
+}
+
+/* The list that holds your cards */
+.research-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+/* Each project card */
+.research-card {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 14px;
+  padding: 18px 18px 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.04);
+  position: relative;
+}
+
+/* Subtle left accent bar */
+.research-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 4px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* Title spacing */
+.research-title {
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+/* Meta line (funder + dates) */
+.research-meta {
+  font-size: 0.95rem;
+  color: rgba(0, 0, 0, 0.62);
+  margin: 0 0 10px 0;
+}
+
+/* Paragraph spacing */
+.research-card p {
+  margin: 0 0 10px 0;
+  line-height: 1.6;
+  max-width: 78ch;
+}
+.research-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tag row */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px 0;
+}
+
+/* Individual tag pill */
+.tag {
+  font-size: 0.80rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
 }
 
 
