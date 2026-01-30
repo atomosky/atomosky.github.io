@@ -4,8 +4,8 @@ navbar_name: "AnneMarie Tomosky"
 
 positions:
 - name: Senior Research Project Manager
-  name: Barnett College of Public Health Temple University
-  logo: assets/images/badges/Screenshot 2026-01-29 174125.png  # Logo is optional
+- name: Barnett College of Public Health Temple University
+- logo: assets/images/badges/Screenshot 2026-01-29 174125.png  # Logo is optional
 
 
 email: "atomosky@temple.edu"
