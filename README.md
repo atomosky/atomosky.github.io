@@ -1,6 +1,6 @@
 # atomosky.github.io
 
-Personal website for **AnneMarie Tomosky, MPH** — senior research project manager in the Intelligent Health Research Lab at Temple University's College of Public Health.
+Personal website for **AnneMarie Tomosky, MPH** - senior research project manager in the Intelligent Health Research Lab at Temple University's College of Public Health.
 
 **Live site:** https://atomosky.github.io
 
