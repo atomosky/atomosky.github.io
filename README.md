@@ -14,7 +14,6 @@ A single-page site covering my research, teaching, publications, and the plain-l
 |---|---|
 | `index.html` | The entire site: HTML, CSS, and JavaScript in one file |
 | `cv.pdf` | Curriculum vitae, linked from the Contact section |
-| `resume.pdf` | Two-page resume |
 
 ## How it's built
 
